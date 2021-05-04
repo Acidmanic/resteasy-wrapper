@@ -60,7 +60,24 @@
     </repositories>
     
     
-<scm><connection>scm:git:git@github.com:Acidmanic/resteasy-wrapper.git</connection><developerConnection>scm:git:https://github.com/Acidmanic/resteasy-wrapper.git</developerConnection><url>https://github.com/Acidmanic/resteasy-wrapper</url></scm><developers><developer><email>acidmanic.moayedi@gmail.com</email><organization>Acidmanic</organization><name>Mani Moayedi</name><organizationUrl>http://acidmanic.com</organizationUrl></developer></developers><description>While reast easy is easy to use and feature ritch enough, i use this library to simplify setting up resteasy for myself.</description><url>https://github.com/Acidmanic/resteasy-wrapper</url><build><plugins><plugin>
+    <scm>
+        <connection>scm:git:git@github.com:Acidmanic/resteasy-wrapper.git</connection>
+        <developerConnection>scm:git:https://github.com/Acidmanic/resteasy-wrapper.git</developerConnection>
+        <url>https://github.com/Acidmanic/resteasy-wrapper</url>
+    </scm>
+    <developers>
+        <developer>
+            <email>acidmanic.moayedi@gmail.com</email>
+            <organization>Acidmanic</organization>
+            <name>Mani Moayedi</name>
+            <organizationUrl>http://acidmanic.com</organizationUrl>
+        </developer>
+    </developers>
+    <description>While reast easy is easy to use and feature ritch enough, i use this library to simplify setting up resteasy for myself.</description>
+    <url>https://github.com/Acidmanic/resteasy-wrapper</url>
+    <build>
+        <plugins>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
@@ -68,7 +85,8 @@
                         <manifestFile>manifest.mf</manifestFile>
                     </archive>
                 </configuration>
-            </plugin><plugin>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.2.1</version>
@@ -80,7 +98,8 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin><plugin>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.9.1</version>
@@ -97,7 +116,8 @@
                     <additionalOptions>-Xdoclint:none</additionalOptions>
                     <additionalJOption>-Xdoclint:none</additionalJOption>
                 </configuration>
-            </plugin><plugin>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
@@ -113,7 +133,8 @@
                 <configuration>
        
                 </configuration>
-            </plugin><plugin>
+            </plugin>
+            <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.8</version>
@@ -123,7 +144,10 @@
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
-            </plugin></plugins></build><distributionManagement>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -132,4 +156,5 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
-    </distributionManagement></project>
+    </distributionManagement>
+</project>
